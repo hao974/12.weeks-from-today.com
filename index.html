@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Weeks From Today - Future Date Calculator</title>
+    <meta name="description" content="Calculate the exact date 12 weeks from today. Find out what day of the week it will be in 12 weeks from now.">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://weeks-from-today.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://weeks-from-today.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://weeks-from-today.com/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="https://weeks-from-today.com/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #34495e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin-bottom: 30px;
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .date-display {
+            font-size: 2rem;
+            color: #007bff;
+            margin: 1rem 0;
+        }
+
+        .details {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .other-weeks {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .week-link {
+            background: #007bff;
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .week-link:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQQ1BH0CJK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VQQ1BH0CJK');
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="https://weeks-from-today.com/">Home</a>
+            <a href="https://weeks-from-today.com/about.html">About</a>
+            <a href="https://weeks-from-today.com/contact.html">Contact</a>
+            <a href="https://weeks-from-today.com/privacy.html">privacy</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h1>12 Weeks From Today</h1>
+            <p>Find out the exact date in 12 weeks</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="result-card">
+            <h2>In 12 weeks from today:</h2>
+            <div class="date-display" id="futureDate">
+                Loading...
+            </div>
+            <div id="dayCount"></div>
+        </div>
+
+        <div class="details">
+            <h3>Additional Information:</h3>
+            <ul id="dateDetails">
+                <li>Number of days: 84</li>
+                <li>Including weekends: <span id="weekends"></span></li>
+                <li>Working days: <span id="workdays"></span></li>
+            </ul>
+        </div>
+
+        <div class="result-card">
+            <h2>Other Week Calculations</h2>
+            <div class="other-weeks">
+                <a href="https://1.weeks-from-today.com/" class="week-link">1 Week</a>
+                <a href="https://2.weeks-from-today.com/" class="week-link">2 Weeks</a>
+                <a href="https://3.weeks-from-today.com/" class="week-link">3 Weeks</a>
+                <a href="https://4.weeks-from-today.com/" class="week-link">4 Weeks</a>
+                <a href="https://5.weeks-from-today.com/" class="week-link">5 Weeks</a>
+                <a href="https://6.weeks-from-today.com/" class="week-link">6 Weeks</a>
+                <a href="https://7.weeks-from-today.com/" class="week-link">7 Weeks</a>
+                <a href="https://8.weeks-from-today.com/" class="week-link">8 Weeks</a>
+                <a href="https://9.weeks-from-today.com/" class="week-link">9 Weeks</a>
+                <a href="https://10.weeks-from-today.com/" class="week-link">10 Weeks</a>
+                <a href="https://11.weeks-from-today.com/" class="week-link">11 Weeks</a>
+                <a href="https://12.weeks-from-today.com/" class="week-link">12 Weeks</a>
+                <a href="https://13.weeks-from-today.com/" class="week-link">13 Weeks</a>
+                <a href="https://14.weeks-from-today.com/" class="week-link">14 Weeks</a>
+                <a href="https://15.weeks-from-today.com/" class="week-link">15 Weeks</a>
+                <a href="https://16.weeks-from-today.com/" class="week-link">16 Weeks</a>
+                <a href="https://17.weeks-from-today.com/" class="week-link">17 Weeks</a>
+                <a href="https://18.weeks-from-today.com/" class="week-link">18 Weeks</a>
+                <a href="https://19.weeks-from-today.com/" class="week-link">19 Weeks</a>
+                <a href="https://20.weeks-from-today.com/" class="week-link">20 Weeks</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 <a href="https://weeks-from-today.com/">Weeks From Today Calculator</a>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function calculateDate() {
+            const today = new Date();
+            const futureDate = new Date(today.getTime() + (84 * 24 * 60 * 60 * 1000));
+            
+            document.getElementById('futureDate').innerHTML = futureDate.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            // Calculate working days
+            let workdays = 0;
+            let weekends = 0;
+            let currentDate = new Date(today);
+
+            for(let i = 0; i < 84; i++) {
+                const dayOfWeek = currentDate.getDay();
+                if(dayOfWeek === 0 || dayOfWeek === 6) {
+                    weekends++;
+                } else {
+                    workdays++;
+                }
+                currentDate.setDate(currentDate.getDate() + 1);
+            }
+
+            document.getElementById('weekends').textContent = weekends;
+            document.getElementById('workdays').textContent = workdays;
+        }
+
+        // Initialize calculations when page loads
+        window.onload = calculateDate;
+    </script>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6788bd9f6240770012bc8d38&product=sticky-share-buttons&source=platform" async="async"></script>
+</body>
+</html>
