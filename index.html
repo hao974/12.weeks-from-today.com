@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12 Weeks From Today - Future Date Calculator</title>
-    <meta name="description" content="Calculate the exact date 12 weeks from today. Find out what day of the week it will be in 12 weeks from now.">
+    <title>20 Weeks From Today - Future Date Calculator</title>
+    <meta name="description" content="Calculate the exact date 20 weeks from today. Find out what day of the week it will be in 20 weeks from now.">
     <link rel="apple-touch-icon" sizes="180x180" href="https://weeks-from-today.com/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://weeks-from-today.com/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://weeks-from-today.com/favicon-16x16.png">
     <link rel="icon" type="image/ico" href="https://weeks-from-today.com/favicon.ico">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQQ1BH0CJK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VQQ1BH0CJK');
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -102,15 +112,6 @@
             text-align: center;
         }
     </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQQ1BH0CJK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-VQQ1BH0CJK');
-    </script>
 </head>
 <body>
     <nav>
@@ -118,20 +119,20 @@
             <a href="https://weeks-from-today.com/">Home</a>
             <a href="https://weeks-from-today.com/about.html">About</a>
             <a href="https://weeks-from-today.com/contact.html">Contact</a>
-            <a href="https://weeks-from-today.com/privacy.html">privacy</a>
+            <a href="https://weeks-from-today.com/privacy.html">Privacy</a>
         </div>
     </nav>
 
     <div class="hero">
         <div class="container">
-            <h1>12 Weeks From Today</h1>
-            <p>Find out the exact date in 12 weeks</p>
+            <h1>20 Weeks From Today</h1>
+            <p>Find out the exact date in 20 weeks</p>
         </div>
     </div>
 
     <div class="container">
         <div class="result-card">
-            <h2>In 12 weeks from today:</h2>
+            <h2>In 20 weeks from today:</h2>
             <div class="date-display" id="futureDate">
                 Loading...
             </div>
@@ -141,7 +142,7 @@
         <div class="details">
             <h3>Additional Information:</h3>
             <ul id="dateDetails">
-                <li>Number of days: 84</li>
+                <li>Number of days: 140</li>
                 <li>Including weekends: <span id="weekends"></span></li>
                 <li>Working days: <span id="workdays"></span></li>
             </ul>
@@ -183,7 +184,7 @@
     <script>
         function calculateDate() {
             const today = new Date();
-            const futureDate = new Date(today.getTime() + (84 * 24 * 60 * 60 * 1000));
+            const futureDate = new Date(today.getTime() + (140 * 24 * 60 * 60 * 1000));
             
             document.getElementById('futureDate').innerHTML = futureDate.toLocaleDateString('en-US', {
                 weekday: 'long',
@@ -197,7 +198,7 @@
             let weekends = 0;
             let currentDate = new Date(today);
 
-            for(let i = 0; i < 84; i++) {
+            for(let i = 0; i < 140; i++) {
                 const dayOfWeek = currentDate.getDay();
                 if(dayOfWeek === 0 || dayOfWeek === 6) {
                     weekends++;
@@ -214,6 +215,5 @@
         // Initialize calculations when page loads
         window.onload = calculateDate;
     </script>
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6788bd9f6240770012bc8d38&product=sticky-share-buttons&source=platform" async="async"></script>
 </body>
 </html>
